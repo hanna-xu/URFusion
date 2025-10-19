@@ -28,10 +28,18 @@ pillow=10.4<br>
 scikit-image=0.21
 scipy=1.10.1<br>
 
-### __To train__:
-* __Training dataset:__
-  * Prepare training data: put the training images in `./dataset/low/` and `./dataset/high/`, respectively.
-  * Can also put a small number of paired low-light and normal-light images in `./dataset/eval/low/` and `./dataset/eval/high/` for validation during the training phase.
+## __To train__:
+### Multi-exposure Image Fusion:
+*  `cd multi-exposure`<br>
+* __Train the visible intrinsic content extractor:__<br>
+  * Prepare training data: put the training data. i.e., paired visible images of the same scene (same images or images of different degradations), in `./dataset/train/source1/` and `./dataset/train/source2/`, respectively.
+  * Train the intrinsic content extractor: `cd code` and run ```python train_content_extractor.py```<br>
+  * Relevant files are stored in `./train-jobs/content-extractor-log/` and ``
+
+
+
+
+
 
 * __Train the decomposition network:__<br>
   * Run ```CUDA_VISIBLE_DEVICES=0 python train_decomposition_network.py```<br>
