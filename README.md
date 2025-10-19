@@ -39,7 +39,8 @@ scipy=1.10.1<br>
   * `cd code` and run `python train_content_fusion.py`<br>
   * Relevant files are stored in `./train-jobs/log/content-fusion/` and `./train-jobs/ckpt/content-fusion_ckpt.pth`
 * __3. Train the appearance representation network:__<br>
-  * Prepare training data: put the training data. i.e., paired visible images of the same scene (same images or images of different degradations), in `./dataset/train/source1/` and `./dataset/train/source2/`, respectively.
+  * Prepare training data: put the training data (a large number of high-quality normal-light images) in `./dataset/train/A2V/`
+  * `cd code` and run `python A2V.py`<br>
 
 
 
