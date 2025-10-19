@@ -42,22 +42,8 @@ scipy=1.10.1<br>
   * `cd code` and run `python A2V.py`<br>
   * Relevant files are stored in `./train-jobs/log/A2V/` and `./train-jobs/ckpt/A2V_ckpt.pth`
   * Put some high-quality normal-light images in `./dataset/train/normal_img/`
-  * `cd code` and run `centroid.py` to obtain the statistical high-quality appearance representation<br>
+  * `cd code` and run `centroid.py` to obtain the statistical high-quality appearance representation `./train-jobs/normal_img.mat`<br>
 
-
-
-
-* __Train the decomposition network:__<br>
-  * Run ```CUDA_VISIBLE_DEVICES=0 python train_decomposition_network.py```<br>
-  * The relevant files are stored in `./checkpoint/decom/`, `./logs/decom/`, and `./eval_result/decom/`
-
-* __Train the color shift estimation network:__<br>
-  * Run ```CUDA_VISIBLE_DEVICES=0 python train_color_network.py```<br>
-  * The relevant files are stored in `./checkpoint/color_net/`, `./logs/color_net/`, and `./eval_result/color/`
-
-* Train the spatially variant pollution estimation network:<br>
-  * Run ```CUDA_VISIBLE_DEVICES=0 python train_noise_network.py```<br>
-  * The relevant files are stored in `./checkpoint/noise_net/`, `./logs/noise_net/`, and `./eval_result/noise/`
 
 
 ## __To test:__
