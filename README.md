@@ -2,7 +2,10 @@
 Code of "URFusion: Unsupervised Unified Degradation-Robust Image Fusion Network" (TIP 2025).
 
 ## Introduction:
-This study proposes an unsupervised unified degradation-robust image fusion network, termed as URFusion, for visible and infrared image fusion and multi-exposure image fusion. In this work, various types of degradations can be uniformly eliminated during the fusion process in an unsupervised manner. It is composed of three core modules: i) intrinsic content extraction (extract degradation-free intrinsic content features from images affected by various degradations), (ii) intrinsic content fusion (with content features to provide feature-level rather than image-level fusion constraints for optimizing the content fusion network, eliminating degradation residues and reliance on ground truth), and (iii) appearance representation learning and assignment (learn the appearance representation of images and assign the statistical appearance representation of high-quality images to the content-fused result, producing the final high-quality fused image).
+This study proposes an unsupervised unified degradation-robust image fusion network, termed as URFusion, for visible and infrared image fusion and multi-exposure image fusion. In this work, various types of degradations can be uniformly eliminated during the fusion process in an unsupervised manner. It is composed of three core modules:<br>
+i) intrinsic content extraction (extract degradation-free intrinsic content features from images affected by various degradations);<br>
+ii) intrinsic content fusion (with content features to provide feature-level rather than image-level fusion constraints for optimizing the content fusion network, eliminating degradation residues and reliance on ground truth);<br>
+iii) appearance representation learning and assignment (learn the appearance representation of images and assign the statistical appearance representation of high-quality images to the content-fused result, producing the final high-quality fused image).
 <br>
 
 The framework of this method is shown below:
