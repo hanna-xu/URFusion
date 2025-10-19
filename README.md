@@ -7,7 +7,7 @@ This method can keep the color constancy of the low-light image (as can be seen 
 <br>
 
 The framework of this method is shown below:
-<div align=center><img src="https://github.com/hanna-xu/others/blob/master/images/CRetinex_framework.png" width="870" height="348"/></div>
+<div align=center><img src="https://github.com/hanna-xu/others/blob/master/images/URFusion_framework.jpg" width="870" height="416"/></div>
 <br>
 
 
@@ -46,12 +46,14 @@ pillow=8.2<br>
   
 If this work is helpful to you, please cite it as:
 ```
-@article{xu2024CRetinex,
-  title={CRetinex: A Progressive Color-shift Aware Retinex Model for Low-light Image Enhancement},
-  author={Xu, Han and Zhang, Hao and Yi, Xunpeng and Ma, Jiayi},
-  journal={International Journal of Computer Vision},
-  year={2024},
-  publisher={Springer}
+@article{xu2025urfusion,
+  title={URFusion: Unsupervised Unified Degradation-Robust Image Fusion Network},
+  author={Xu, Han and Yi, Xunpeng and Lu, Chen and Liu, Guangcan and Ma, Jiayi},
+  journal={IEEE Transactions on Image Processing},
+  year={2025},
+  volume={34},
+  pages={5803--5818},
+  publisher={IEEE}
 }
 ```
 
