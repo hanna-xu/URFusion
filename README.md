@@ -47,9 +47,13 @@ scipy=1.10.1<br>
 
 
 ## __To test:__
-  * Put the test data in `./test_images/`
-  * Run ```CUDA_VISIBLE_DEVICES=0 python test.py```<br>
-  
+### Multi-exposure Image Fusion:
+* `cd multi-exposure`<br>
+* Put the test data in `./dataset/test/source1/` and `./dataset/test/source2/`
+* Run `python test.py`<br>
+
+
+
 If this work is helpful to you, please cite it as:
 ```
 @article{xu2025urfusion,
