@@ -28,14 +28,17 @@ pillow=10.4<br>
 scikit-image=0.21
 scipy=1.10.1<br>
 
-## __To train__:
+## __To train:__
 ### Multi-exposure Image Fusion:
 *  `cd multi-exposure`<br>
-* __Train the visible intrinsic content extractor:__<br>
+* __1. Train the visible intrinsic content extractor:__<br>
   * Prepare training data: put the training data. i.e., paired visible images of the same scene (same images or images of different degradations), in `./dataset/train/source1/` and `./dataset/train/source2/`, respectively.
-  * Train the intrinsic content extractor: `cd code` and run ```python train_content_extractor.py```<br>
+  * Train the intrinsic content extractor: `cd code` and run `python train_content_extractor.py`<br>
   * Relevant files are stored in `./train-jobs/log/content-extractor/` and `./train-jobs/ckpt/content-extractor_ckpt.pth`
-
+* __2. Train the intrinsic content fusion network:__<br>
+  * `cd code` and run `python train_content_fusion.py`<br>
+  * Relevant files are stored in `./train-jobs/log/content-fusion/` and `./train-jobs/ckpt/content-fusion_ckpt.pth`
+* __3. Train the intrinsic content fusion network:__<br>
 
 
 
@@ -53,11 +56,8 @@ scipy=1.10.1<br>
   * Run ```CUDA_VISIBLE_DEVICES=0 python train_noise_network.py```<br>
   * The relevant files are stored in `./checkpoint/noise_net/`, `./logs/noise_net/`, and `./eval_result/noise/`
 
-* __Train the illumination adjustment network:__<br>
-  * Run ```CUDA_VISIBLE_DEVICES=0 python train_illu_adjust_network.py```<br>
-  * The relevant files are stored in `./checkpoint/illu_adjust/`, `./logs/illu_adjust/`, and `./eval_result/illu_adjust/`
 
-### To test:
+## __To test:__
   * Put the test data in `./test_images/`
   * Run ```CUDA_VISIBLE_DEVICES=0 python test.py```<br>
   
