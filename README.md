@@ -39,9 +39,10 @@ scipy=1.10.1<br>
   * `cd code` and run `python train_content_fusion.py`<br>
   * Relevant files are stored in `./train-jobs/log/content-fusion/` and `./train-jobs/ckpt/content-fusion_ckpt.pth`
 * __3. Train the appearance representation network:__<br>
-  * Prepare training data: put the training data (a large number of high-quality normal-light images) in `./dataset/train/A2V/`
   * `cd code` and run `python A2V.py`<br>
-
+  * Put some high-quality normal-light images in `./dataset/train/normal_img/`
+  * `cd code` and run `centroid.py` to <br>
+  *
 
 
 
