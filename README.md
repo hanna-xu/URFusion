@@ -38,7 +38,8 @@ scipy=1.10.1<br>
 * __2. Train the intrinsic content fusion network:__<br>
   * `cd code` and run `python train_content_fusion.py`<br>
   * Relevant files are stored in `./train-jobs/log/content-fusion/` and `./train-jobs/ckpt/content-fusion_ckpt.pth`
-* __3. Train the intrinsic content fusion network:__<br>
+* __3. Train the appearance representation network:__<br>
+  * Prepare training data: put the training data. i.e., paired visible images of the same scene (same images or images of different degradations), in `./dataset/train/source1/` and `./dataset/train/source2/`, respectively.
 
 
 
