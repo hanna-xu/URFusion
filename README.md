@@ -34,7 +34,7 @@ scipy=1.10.1<br>
 * __Train the visible intrinsic content extractor:__<br>
   * Prepare training data: put the training data. i.e., paired visible images of the same scene (same images or images of different degradations), in `./dataset/train/source1/` and `./dataset/train/source2/`, respectively.
   * Train the intrinsic content extractor: `cd code` and run ```python train_content_extractor.py```<br>
-  * Relevant files are stored in `./train-jobs/content-extractor-log/` and ``
+  * Relevant files are stored in `./train-jobs/log/content-extractor/` and `./train-jobs/ckpt/content-extractor_ckpt.pth`
 
 
 
