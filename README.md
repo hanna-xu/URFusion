@@ -44,6 +44,7 @@ scipy=1.10.1<br>
   * Put some high-quality normal-light images in `./dataset/train/normal_img/`
   * `cd code` and run `centroid.py` to obtain the statistical high-quality appearance representation `./train-jobs/normal_img.mat`<br>
 
+### Visible and Infrared Image Fusion:
 
 
 ## __To test:__
@@ -52,6 +53,7 @@ scipy=1.10.1<br>
 * Put the test data in `./dataset/test/source1/` and `./dataset/test/source2/`
 * Run `python test.py`<br>
 
+### Visible and Infrared Image Fusion:
 
 
 If this work is helpful to you, please cite it as:
