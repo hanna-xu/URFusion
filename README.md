@@ -40,9 +40,9 @@ scipy=1.10.1<br>
   * Relevant files are stored in `./train-jobs/log/content-fusion/` and `./train-jobs/ckpt/content-fusion_ckpt.pth`
 * __3. Train the appearance representation network:__<br>
   * `cd code` and run `python A2V.py`<br>
+  * Relevant files are stored in `./train-jobs/log/A2V/` and `./train-jobs/ckpt/A2V_ckpt.pth`
   * Put some high-quality normal-light images in `./dataset/train/normal_img/`
-  * `cd code` and run `centroid.py` to <br>
-  *
+  * `cd code` and run `centroid.py` to obtain the statistical high-quality appearance representation<br>
 
 
 
