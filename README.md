@@ -65,10 +65,12 @@ scipy=1.10.1<br>
 ### Multi-exposure Image Fusion:
 * `cd multi-exposure`<br>
 * Put the test data in `./dataset/test/source1/` and `./dataset/test/source2/`
-* Run `python test.py`<br>
+* `cd code` and run `python test.py`<br>
 
 ### Visible and Infrared Image Fusion:
-
+* `cd vis-ir`<br>
+* Put the test data in `./dataset/test/vis/` and `./dataset/test/ir/`
+* `cd code` and run `python test.py`<br>
 
 If this work is helpful to you, please cite it as:
 ```
