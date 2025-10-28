@@ -50,6 +50,7 @@ scipy=1.10.1<br>
 * __2. Train the infrared intrinsic content extractor:__<br>
   * Prepare training data: put the training data. i.e., paired infrared images of the same scene (same images or images of different degradations), in `./dataset/train/IR/`
   * Train the infrared intrinsic content extractor: `cd code` and run `python train_content_extractor_ir.py`<br>
+  * Relevant files are stored in `./train-jobs/log/content-extractor-ir/` and `./train-jobs/ckpt/content-extractor-ir_ckpt.pth`
 
 
 ## __To test:__
