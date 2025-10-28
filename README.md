@@ -32,7 +32,7 @@ scipy=1.10.1<br>
 ### Multi-exposure Image Fusion:
 *  `cd multi-exposure`<br>
 * __1. Train the visible intrinsic content extractor:__<br>
-  * Prepare training data: put the training data. i.e., paired visible images of the same scene (same images or images of different degradations), in `./dataset/train/source1/` and `./dataset/train/source2/`, respectively.
+  * Prepare training data: put the training data. i.e., paired visible images of the same scene (same images or images of different degradations), in `./dataset/train/source1/` and `./dataset/train/source2/`, respectively
   * Train the intrinsic content extractor: `cd code` and run `python train_content_extractor.py`<br>
   * Relevant files are stored in `./train-jobs/log/content-extractor/` and `./train-jobs/ckpt/content-extractor_ckpt.pth`
 * __2. Train the intrinsic content fusion network:__<br>
@@ -45,6 +45,11 @@ scipy=1.10.1<br>
   * `cd code` and run `centroid.py` to obtain the statistical high-quality appearance representation `./train-jobs/normal_img.mat`<br>
 
 ### Visible and Infrared Image Fusion:
+*  `cd vis-ir`<br>
+* __1. Train the visible intrinsic content extractor as described above (the training data is put in `./dataset/train/VIS/`):__<br>
+* __2. Train the infrared intrinsic content extractor:__<br>
+  * Prepare training data: put the training data. i.e., paired infrared images of the same scene (same images or images of different degradations), in `./dataset/train/IR/`
+  * Train the infrared intrinsic content extractor: `cd code` and run `python train_content_extractor_ir.py`<br>
 
 
 ## __To test:__
