@@ -1,5 +1,6 @@
 # URFusion
-Code of "URFusion: Unsupervised Unified Degradation-Robust Image Fusion Network" (TIP 2025).
+Code of "URFusion: Unsupervised Unified Degradation-Robust Image Fusion Network" (TIP 2025).<br>
+[paper](https://github.com/hanna-xu/URFusion/blob/main/paper.pdf)
 
 ## Introduction:
 This study proposes an unsupervised unified degradation-robust image fusion network, termed as URFusion, for visible and infrared image fusion and multi-exposure image fusion. In this work, various types of degradations can be uniformly eliminated during the fusion process in an unsupervised manner. It is composed of three core modules:<br>
