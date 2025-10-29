@@ -2,7 +2,7 @@
 Code of "URFusion: Unsupervised Unified Degradation-Robust Image Fusion Network" (TIP 2025).<br>
 [Paper](https://github.com/hanna-xu/URFusion/blob/main/paper.pdf)
 
-## Introduction:
+## Introduction
 This study proposes an unsupervised unified degradation-robust image fusion network, termed as URFusion, for visible and infrared image fusion and multi-exposure image fusion. In this work, various types of degradations can be uniformly eliminated during the fusion process in an unsupervised manner. It is composed of three core modules:<br>
 i) Intrinsic content extraction (extract degradation-free intrinsic content features from images affected by various degradations);<br>
 ii) Intrinsic content fusion (with content features to provide feature-level rather than image-level fusion constraints for optimizing the content fusion network, eliminating degradation residues and reliance on ground truth);<br>
@@ -14,7 +14,7 @@ The framework of this method is shown below:
 <br>
 
 
-## Recommended Environment:
+## Recommended Environment
 python=3.10<br>
 pytorch=1.13<br>
 pytorch-cuda=11.7<br>
@@ -30,7 +30,7 @@ scikit-image=0.21
 scipy=1.10.1<br>
 
 ## __To train:__
-### Multi-exposure Image Fusion:
+### Multi-exposure Image Fusion
 *  `cd multi-exposure`<br>
 * __1. Train the visible intrinsic content extractor:__<br>
   * Prepare training data: put the training data. i.e., paired visible images of the same scene (same images or images of different degradations), in `../dataset/train/source1/` and `../dataset/train/source2/`, respectively
@@ -45,7 +45,7 @@ scipy=1.10.1<br>
   * Put some high-quality normal-light images in `../dataset/train/normal_img/`
   * `cd code` and run `centroid.py` to obtain the statistical high-quality appearance representation `../train-jobs/normal_img.mat`<br>
 
-### Visible and Infrared Image Fusion:
+### Visible and Infrared Image Fusion
 *  `cd vis-ir`<br>
 * __1. Train the visible intrinsic content extractor as described above (the training data is put in `../dataset/train/VIS/`):__<br>
 * __2. Train the infrared intrinsic content extractor:__<br>
@@ -63,12 +63,12 @@ scipy=1.10.1<br>
 
 
 ## __To test:__
-### Multi-exposure Image Fusion:
+### Multi-exposure Image Fusion
 * `cd multi-exposure`<br>
 * Put the test data in `./dataset/test/source1/` and `./dataset/test/source2/`
 * `cd code` and run `python test.py`<br>
 
-### Visible and Infrared Image Fusion:
+### Visible and Infrared Image Fusion
 * `cd vis-ir`<br>
 * Put the test data in `./dataset/test/vis/` and `./dataset/test/ir/`
 * `cd code` and run `python test.py`<br>
